@@ -5,7 +5,7 @@ file <- "scores.csv"
 # save as a data frame 
 scores_df <- read.csv(file)
 
-# get a dataset with only ones with 13 days' observation
+# get a dataset with only subjects who have at least 13 days' observation
 scores_df <- scores_df[scores_df$days == 13, ]
 scores_df
 
